@@ -9,6 +9,7 @@ export default [
   ...tseslint.configs.recommended,
   {
     rules: {
+      '@typescript-eslint/member-ordering': 'error',
       indent: [
         'error',
         2
@@ -24,7 +25,8 @@ export default [
       semi: [
         'error',
         'always'
-      ]
+      ],
+      'sort-keys': 'error'
     }
   }
 ];
