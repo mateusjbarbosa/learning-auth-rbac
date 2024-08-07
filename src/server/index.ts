@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { SignUpController } from 'src/application/controllers/sign-up';
+import { SignUpController } from '../application/controllers/sign-up';
 import { SignUpUsecase } from '../application/usecases/sign-up';
 
 const app = express()
