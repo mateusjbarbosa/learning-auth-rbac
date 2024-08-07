@@ -1,7 +1,7 @@
 import express from 'express';
 import { makeSignInController } from '../factories/makeSignInController';
 import { makeSignUpController } from '../factories/makeSignUpController';
-import { routeAdapter } from './adapters/route-adapter';
+import { routeAdapter } from './adapters/route';
 
 const app = express();
 
