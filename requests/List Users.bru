@@ -1,0 +1,22 @@
+meta {
+  name: List Users
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseURL}}/users
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "email": "john.doe@email.com",
+    "password": "12345678"
+  }
+}
