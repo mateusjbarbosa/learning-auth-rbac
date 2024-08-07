@@ -18,25 +18,25 @@ export class SignInController implements IController {
       const { accessToken } = await this.usecase.execute({ email, password });
 
       return {
-        statusCode: 200,
         body: {
           accessToken
-        }
+        },
+        statusCode: 200,
       };
     } catch (error) {
       if (error instanceof ZodError) {
         return {
+          body: error.issues as unknown as Record<string, unknown>[],
           statusCode: 400,
-          body: error.issues as unknown as Record<string, unknown>[]
         };
       }
 
       if (error instanceof InvalidCredentials) {
         return {
-          statusCode: 401,
           body: {
             error: 'Invalid credentials.'
-          }
+          },
+          statusCode: 401,
         };
       }
 

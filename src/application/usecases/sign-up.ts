@@ -24,8 +24,8 @@ export class SignUpUsecase {
 
     await prismaClient.account.create({
       data: {
-        name,
         email,
+        name,
         password: hashedPassword
       }
     });

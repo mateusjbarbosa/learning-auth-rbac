@@ -3,8 +3,8 @@ export type Request = {
 }
 
 export type Response = {
-  statusCode: number,
   body: Record<string, unknown> | Record<string, unknown>[] | null
+  statusCode: number,
 }
 
 export interface IController {
