@@ -1,5 +1,7 @@
 export type Request = {
   body: Record<string, unknown>
+  params: Record<string, string>
+  accountId?: string
 }
 
 export type Response = {
