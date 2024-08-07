@@ -153,7 +153,7 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@9.8.0", "@eslint/js@^9.8.0":
+"@eslint/js@9.8.0":
   version "9.8.0"
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.8.0.tgz#ae9bc14bb839713c5056f5018bcefa955556d3a4"
   integrity sha512-MfluB7EUfxXtv3i/++oh89uzAr4PDI4nn201hsp+qaXqsjAWzinlZEHEfPgAX4doIlKvPG/i0A9dpKxOLII8yA==
@@ -193,6 +193,47 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@prisma/client@5.18.0":
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-5.18.0.tgz#526e4281a448f214c0ff81d65c39243608c98294"
+  integrity sha512-BWivkLh+af1kqC89zCJYkHsRcyWsM8/JHpsDMM76DjP3ZdEquJhXa4IeX+HkWPnwJ5FanxEJFZZDTWiDs/Kvyw==
+
+"@prisma/debug@5.18.0":
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/@prisma/debug/-/debug-5.18.0.tgz#527799e044d2903a35945e61ac2d8916e4b61ead"
+  integrity sha512-f+ZvpTLidSo3LMJxQPVgAxdAjzv5OpzAo/eF8qZqbwvgi2F5cTOI9XCpdRzJYA0iGfajjwjOKKrVq64vkxEfUw==
+
+"@prisma/engines-version@5.18.0-25.4c784e32044a8a016d99474bd02a3b6123742169":
+  version "5.18.0-25.4c784e32044a8a016d99474bd02a3b6123742169"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-5.18.0-25.4c784e32044a8a016d99474bd02a3b6123742169.tgz#203426ebf4ec4e1acce7da4a59ec8f0df92b29e7"
+  integrity sha512-a/+LpJj8vYU3nmtkg+N3X51ddbt35yYrRe8wqHTJtYQt7l1f8kjIBcCs6sHJvodW/EK5XGvboOiwm47fmNrbgg==
+
+"@prisma/engines@5.18.0":
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-5.18.0.tgz#26ea46e26498be622407cf95663d7fb4c39c895b"
+  integrity sha512-ofmpGLeJ2q2P0wa/XaEgTnX/IsLnvSp/gZts0zjgLNdBhfuj2lowOOPmDcfKljLQUXMvAek3lw5T01kHmCG8rg==
+  dependencies:
+    "@prisma/debug" "5.18.0"
+    "@prisma/engines-version" "5.18.0-25.4c784e32044a8a016d99474bd02a3b6123742169"
+    "@prisma/fetch-engine" "5.18.0"
+    "@prisma/get-platform" "5.18.0"
+
+"@prisma/fetch-engine@5.18.0":
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/@prisma/fetch-engine/-/fetch-engine-5.18.0.tgz#5b343e2b36b27e2713901ddd032ddd6932b3d55f"
+  integrity sha512-I/3u0x2n31rGaAuBRx2YK4eB7R/1zCuayo2DGwSpGyrJWsZesrV7QVw7ND0/Suxeo/vLkJ5OwuBqHoCxvTHpOg==
+  dependencies:
+    "@prisma/debug" "5.18.0"
+    "@prisma/engines-version" "5.18.0-25.4c784e32044a8a016d99474bd02a3b6123742169"
+    "@prisma/get-platform" "5.18.0"
+
+"@prisma/get-platform@5.18.0":
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/@prisma/get-platform/-/get-platform-5.18.0.tgz#0dc4c82fe9a4971f4519a57cb2dd69d8e0df4b71"
+  integrity sha512-Tk+m7+uhqcKDgnMnFN0lRiH7Ewea0OEsZZs9pqXa7i3+7svS3FSCqDBCaM9x5fmhhkufiG0BtunJVDka+46DlA==
+  dependencies:
+    "@prisma/debug" "5.18.0"
 
 "@types/node@22.1.0":
   version "22.1.0"
@@ -461,7 +502,7 @@ eslint-visitor-keys@^4.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-4.0.0.tgz#e3adc021aa038a2a8e0b2f8b0ce8f66b9483b1fb"
   integrity sha512-OtIRv/2GyiF6o/d8K7MYKKbXrOUBIK6SfkIRM4Z0dY3w+LiQ0vy3F57m0Z71bjbyeiWFiHJ8brqnmE6H6/jEuw==
 
-eslint@9.x:
+eslint@9.8.0:
   version "9.8.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-9.8.0.tgz#a4f4a090c8ea2d10864d89a6603e02ce9f649f0f"
   integrity sha512-K8qnZ/QJzT2dLKdZJVX6W4XOwBzutMYmt0lqUS+JdXgd+HTYFlonFgkJ8s44d/zMPPCnOOk0kMWCApCPhiOy9A==
@@ -628,15 +669,15 @@ glob-parent@^6.0.2:
   dependencies:
     is-glob "^4.0.3"
 
+globals@15.9.0:
+  version "15.9.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-15.9.0.tgz#e9de01771091ffbc37db5714dab484f9f69ff399"
+  integrity sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==
+
 globals@^14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-14.0.0.tgz#898d7413c29babcf6bafe56fcadded858ada724e"
   integrity sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==
-
-globals@^15.9.0:
-  version "15.9.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-15.9.0.tgz#e9de01771091ffbc37db5714dab484f9f69ff399"
-  integrity sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==
 
 globby@^11.1.0:
   version "11.1.0"
@@ -849,6 +890,13 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
+prisma@5.18.0:
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-5.18.0.tgz#5ef69c802a075b7596231ea57003496873610b9e"
+  integrity sha512-+TrSIxZsh64OPOmaSgVPH7ALL9dfU0jceYaMJXsNrTkFHO7/3RANi5K2ZiPB1De9+KDxCWn7jvRq8y8pvk+o9g==
+  dependencies:
+    "@prisma/engines" "5.18.0"
+
 punycode@^2.1.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
@@ -956,7 +1004,7 @@ type-check@^0.4.0, type-check@~0.4.0:
   dependencies:
     prelude-ls "^1.2.1"
 
-typescript-eslint@^8.0.1:
+typescript-eslint@8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/typescript-eslint/-/typescript-eslint-8.0.1.tgz#e812ce16e9332c6c81cfa2f17aecf99b74473da7"
   integrity sha512-V3Y+MdfhawxEjE16dWpb7/IOgeXnLwAEEkS7v8oDqNcR1oYlqWhGH/iHqHdKVdpWme1VPZ0SoywXAkCqawj2eQ==
