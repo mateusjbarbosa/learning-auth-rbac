@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Leaning Auth RBAC",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
